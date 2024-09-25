@@ -1,19 +1,14 @@
-import githubIcon from '../../assets/social-medias/github.svg';
-import linkedinIcon from '../../assets/social-medias/linkedin.svg';
-import stackoverflowIcon from '../../assets/social-medias/stackoverflow.svg';
-import discordIcon from '../../assets/social-medias/discord.svg';
-import udemyIcon from '../../assets/social-medias/udemy.svg';
-import instagramIcon from '../../assets/social-medias/instagram.svg';
-import mediumIcon from '../../assets/social-medias/medium.svg';
+const assetsFolder = '/src/assets';
+const socialMediasFolder = `${assetsFolder}/social-medias`;
 
 const AppIcons = {
-  github: githubIcon,
-  linkedin: linkedinIcon,
-  stackoverflow: stackoverflowIcon,
-  discord: discordIcon,
-  udemy: udemyIcon,
-  instagram: instagramIcon,
-  medium: mediumIcon,
+  github: `${socialMediasFolder}/github.svg`,
+  linkedin: `${socialMediasFolder}/linkedin.svg`,
+  stackoverflow: `${socialMediasFolder}/stackoverflow.svg`,
+  discord: `${socialMediasFolder}/discord.svg`,
+  udemy: `${socialMediasFolder}/udemy.svg`,
+  instagram: `${socialMediasFolder}/instagram.svg`,
+  medium: `${socialMediasFolder}/medium.svg`,
 };
 
 export default AppIcons;
