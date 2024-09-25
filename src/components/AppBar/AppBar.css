@@ -1,0 +1,25 @@
+.appbar-container {
+  @apply w-full bg-black text-white shadow-md; /* Tailwind utilities for dark mode */
+}
+
+.appbar-content {
+  @apply max-w-[1200px] mx-auto flex justify-between items-center p-4;
+}
+
+.appbar-name {
+  @apply text-2xl font-semibold;
+}
+
+.appbar-social-icons {
+  @apply flex space-x-4;
+}
+
+@media (max-width: 768px) {
+  .appbar-name {
+    @apply text-xl;
+  }
+
+  .appbar-social-icons {
+    @apply space-x-2;
+  }
+}
