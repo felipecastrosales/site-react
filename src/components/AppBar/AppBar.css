@@ -1,9 +1,9 @@
 .appbar-container {
-  @apply w-full bg-black text-white shadow-md; /* Tailwind utilities for dark mode */
+  @apply w-full bg-black text-white shadow-md flex items-center justify-center;
 }
 
 .appbar-content {
-  @apply max-w-[1200px] mx-auto flex justify-between items-center p-4;
+  @apply flex items-center justify-between w-full max-w-7xl mx-auto py-6 px-8;
 }
 
 .appbar-name {
@@ -11,7 +11,15 @@
 }
 
 .appbar-social-icons {
-  @apply flex space-x-4;
+  @apply flex flex-row space-x-4 items-center transition duration-300 ease-in-out transform hover:scale-110 cursor-pointer ease-in-out;
+}
+
+.appbar-social-icons:hover {
+  @apply filter drop-shadow-[0_0_2em_#646cffaa];
+}
+
+.appbar-social-icons.react:hover {
+  @apply filter drop-shadow-[0_0_2em_#61dafbaa];
 }
 
 @media (max-width: 768px) {
