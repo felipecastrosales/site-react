@@ -9,25 +9,3 @@
 .appbar-name {
   @apply text-2xl font-semibold;
 }
-
-.appbar-social-icons {
-  @apply flex flex-row space-x-4 items-center transition duration-300 ease-in-out transform hover:scale-110 cursor-pointer ease-in-out;
-}
-
-.appbar-social-icons:hover {
-  @apply filter drop-shadow-[0_0_2em_#646cffaa];
-}
-
-.appbar-social-icons.react:hover {
-  @apply filter drop-shadow-[0_0_2em_#61dafbaa];
-}
-
-@media (max-width: 768px) {
-  .appbar-name {
-    @apply text-xl;
-  }
-
-  .appbar-social-icons {
-    @apply space-x-2;
-  }
-}
