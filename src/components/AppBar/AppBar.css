@@ -1,11 +1,23 @@
 .appbar-container {
-  @apply w-full bg-black text-white shadow-md flex items-center justify-center;
+  @apply w-full bg-black text-white shadow-md flex items-center justify-center fixed top-0 left-0;
 }
 
 .appbar-content {
-  @apply flex items-center justify-between w-full max-w-7xl mx-auto py-6 px-8;
+  @apply flex items-center justify-between w-full max-w-7xl mx-auto py-4 px-4 md:px-8;
 }
 
 .appbar-name {
-  @apply text-2xl font-semibold;
+  @apply text-xl md:text-2xl font-semibold text-left;
+}
+
+@media (min-width: 400px) {
+  .appbar-name {
+    @apply text-2xl md:text-3xl;
+  }
+}
+
+@media (min-width: 380px) {
+  .appbar-social-medias-icons {
+    display: none;
+  }
 }
