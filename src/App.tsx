@@ -12,7 +12,7 @@ function App() {
       <AppBar />
       <SupportMessage />
       <SearchComponent />
-      <Grid items={GridItems} />
+      {/* <Grid items={GridItems} /> */}
     </>
   )
 }

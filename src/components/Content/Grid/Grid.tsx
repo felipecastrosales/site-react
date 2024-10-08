@@ -11,11 +11,12 @@ interface GridItem {
 
 interface GridProps {
   items: GridItem[]
+  className?: string // Add className property
 }
 
-const Grid: React.FC<GridProps> = ({ items }) => {
+const Grid: React.FC<GridProps> = ({ items, className }) => {
   return (
-    <div className="grid-container">
+    <div className={`grid-container ${className}`}>
       {items.map((item) => (
         <div
           key={item.id}
