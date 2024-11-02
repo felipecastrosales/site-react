@@ -11,7 +11,7 @@ interface GridItem {
 
 interface GridProps {
   items: GridItem[]
-  className?: string // Add className property
+  className?: string
 }
 
 const Grid: React.FC<GridProps> = ({ items, className }) => {

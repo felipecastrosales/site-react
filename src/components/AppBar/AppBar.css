@@ -1,5 +1,13 @@
 .appbar-container {
-  @apply w-full bg-black text-white shadow-md flex items-center justify-center fixed top-0 left-0;
+  background-color: black;
+  color: white;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.16);
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--app-bar-height);
 }
 
 .appbar-content {
@@ -7,17 +15,17 @@
 }
 
 .appbar-name {
-  @apply text-xl md:text-2xl font-semibold text-left;
+  @apply text-xl md:text-2xl font-medium text-left text-white;
+}
+
+@media (min-width: 380px) {
+  .appbar-content-social-icons {
+    display: none;
+  }
 }
 
 @media (min-width: 400px) {
   .appbar-name {
     @apply text-2xl md:text-3xl;
-  }
-}
-
-@media (min-width: 380px) {
-  .appbar-social-medias-icons {
-    display: none;
   }
 }

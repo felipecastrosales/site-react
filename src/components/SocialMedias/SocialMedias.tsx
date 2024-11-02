@@ -1,6 +1,11 @@
 import './SocialMedias.css';
-
 import AppIcons from '../../core/constants/AppIcons';
+import React from 'react';
+
+enum SocialMediasIconLayout {
+  Horizontal = 'horizontalIcons',
+  VerticalWithName = 'verticalIconsWithName',
+}
 
 const socialLinks = [
   { 
@@ -40,9 +45,13 @@ const socialLinks = [
   },
 ];
 
-const SocialMedias = () => {
+interface SocialMediasProps {
+  layout: SocialMediasIconLayout;
+}
+
+const SocialMedias: React.FC<SocialMediasProps> = ({ layout }) => {
   return (
-    <div className="social-icons">
+    <div className={`social-icons ${layout}`}>
       {socialLinks.map(({ href, icon, alt }, index) => (
         <a key={index} href={href} target="_blank" rel="noopener noreferrer">
           <img src={icon} alt={alt} height="24" width="24" />
@@ -53,3 +62,5 @@ const SocialMedias = () => {
 }
 
 export default SocialMedias;
+
+export { SocialMediasIconLayout };

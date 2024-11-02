@@ -11,6 +11,7 @@ const SearchComponent = () => {
   const [remainingItems, setRemainingItems] = useState<GridItem[]>([]);
 
   useEffect(() => {
+    // GridItems.sort(() => Math.random() - 0.5);
     const filtered = GridItems.filter(item =>
       item.title.toLowerCase().includes(query.toLowerCase()) ||
       item.categories.some(category => category.toLowerCase().includes(query.toLowerCase()))
@@ -39,7 +40,7 @@ const SearchComponent = () => {
         {remainingItems.length > 0 && (
           <>
             <hr className="divider" />
-            <h2 className="remaining-heading">Você também pode gostar</h2>
+            <h2 className="remaining-heading">Você também pode gostar:</h2>
             <Grid items={remainingItems} className="remaining-grid" />
           </>
         )}
