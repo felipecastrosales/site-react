@@ -1,0 +1,11 @@
+.support-message {
+  text-align: left;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 480px) {
+  .support-message {
+    font-size: 0.8rem;
+  }
+}
