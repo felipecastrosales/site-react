@@ -55,6 +55,7 @@ const SocialMedias: React.FC<SocialMediasProps> = ({ layout }) => {
       {socialLinks.map(({ href, icon, alt }, index) => (
         <a key={index} href={href} target="_blank" rel="noopener noreferrer">
           <img src={icon} alt={alt} height="24" width="24" />
+          {layout === SocialMediasIconLayout.VerticalWithName && <span>{alt}</span>}
         </a>
       ))}
     </div>

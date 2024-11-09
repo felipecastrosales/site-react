@@ -31,8 +31,8 @@ export function DrawerComponent() {
           <DrawerDescription>
             Me acompanhe e fique por dentro de tudo que eu faço!
           </DrawerDescription>
+          <SocialMedias layout={SocialMediasIconLayout.VerticalWithName} />
         </DrawerHeader>
-        <SocialMedias layout={SocialMediasIconLayout.Horizontal} />
       </DrawerContent>
     </Drawer>
   )

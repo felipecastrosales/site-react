@@ -19,3 +19,31 @@
     @apply space-x-2;
   }
 }
+.verticalIconsWithName {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.verticalIconsWithName a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.verticalIconsWithName .social-link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.verticalIconsWithName img {
+  margin-right: 1rem;
+}
+
+.verticalIconsWithName span {
+  font-size: 12px;
+  text-align: left;
+  margin-top: 0;
+}
