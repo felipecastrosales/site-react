@@ -4,11 +4,11 @@ import { useState, useEffect } from 'react';
 import DrawerComponent from './drawer/DrawerComponent';
 
 const AppBar = () => {
-  const [showSocialMedias, setShowSocialMedias] = useState(window.innerWidth > 380);
+  const [showSocialMedias, setShowSocialMedias] = useState(window.innerWidth > 600);
 
   useEffect(() => {
     const handleResize = () => {
-      setShowSocialMedias(window.innerWidth > 380);
+      setShowSocialMedias(window.innerWidth > 600);
     };
 
     window.addEventListener('resize', handleResize);

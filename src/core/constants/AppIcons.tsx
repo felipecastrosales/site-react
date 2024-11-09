@@ -1,7 +1,12 @@
 const assetsFolder = '/src/assets';
+const iconsFolder = `${assetsFolder}/icons`;
 const socialMediasFolder = `${assetsFolder}/social-medias`;
 
 const AppIcons = {
+  /// icons
+  menu: `${iconsFolder}/menu.svg`,
+
+  /// social medias
   github: `${socialMediasFolder}/github.svg`,
   linkedin: `${socialMediasFolder}/linkedin.svg`,
   stackoverflow: `${socialMediasFolder}/stackoverflow.svg`,

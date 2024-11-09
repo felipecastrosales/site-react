@@ -8,3 +8,5 @@ createRoot(document.getElementById('root')!).render(
     <App />
   </StrictMode>,
 )
+
+/// TODO: Verificar erro de responsividade em menores que 380px.

@@ -3,15 +3,14 @@ import * as React from "react"
 import { Button } from "@/components/ui/button"
 import {
   Drawer,
-  DrawerClose,
   DrawerContent,
   DrawerDescription,
-  DrawerFooter,
   DrawerHeader,
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer"
 import SocialMedias, { SocialMediasIconLayout } from "@/components/SocialMedias/SocialMedias"
+import AppIcons from "@/core/constants/AppIcons"
 // import { SocialMedias, SocialMediasIconLayout } from "@/components/ui/socialMedias"
 
 export function DrawerComponent() {
@@ -20,7 +19,11 @@ export function DrawerComponent() {
   return (
     <Drawer open={open} onOpenChange={setOpen}>
       <DrawerTrigger asChild>
-        <Button variant="outline">Edit Profile</Button>
+        <img 
+          src={AppIcons.menu}
+          alt="Redes Sociais" 
+          style={{ height: '24px', color: 'var(--background-color)' }}
+        />
       </DrawerTrigger>
       <DrawerContent>
         <DrawerHeader className="text-left">
