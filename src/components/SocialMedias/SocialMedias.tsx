@@ -1,55 +1,16 @@
 import './SocialMedias.css';
-import AppIcons from '../../core/constants/AppIcons';
-import React from 'react';
+import socialLinks from './SocialMediasList';
 
 enum SocialMediasIconLayout {
   Horizontal = 'horizontal-icons',
   VerticalWithName = 'vertical-icons-with-name',
 }
 
-const socialLinks = [
-  { 
-    href: 'https://github.com/felipecastrosales', 
-    icon: AppIcons.github,
-    alt: 'GitHub',
-  },
-  { 
-    href: 'https://linkedin.com/in/felipecastrosales', 
-    icon: AppIcons.linkedin, 
-    alt: 'LinkedIn',
-  },
-  { 
-    href: 'https://stackoverflow.com/users/13096514/felipe-sales', 
-    icon: AppIcons.stackoverflow, 
-    alt: 'Stack Overflow',
-  },
-  { 
-    href: 'https://discord.com/users/406074089011281921', 
-    icon: AppIcons.discord, 
-    alt: 'Discord',
-  },
-  { 
-    href: 'https://www.udemy.com/user/luis-felipe-de-castro-sales/', 
-    icon: AppIcons.udemy, 
-    alt: 'Udemy',
-  },
-  { 
-    href: 'https://www.instagram.com/felipecastrosales', 
-    icon: AppIcons.instagram, 
-    alt: 'Instagram',
-  },
-  { 
-    href: 'https://medium.com/@felipecastrosales', 
-    icon: AppIcons.medium, 
-    alt: 'Medium',
-  },
-];
-
 interface SocialMediasProps {
   layout: SocialMediasIconLayout;
 }
 
-const SocialMedias: React.FC<SocialMediasProps> = ({ layout }) => {
+const SocialMedias = ({ layout }: SocialMediasProps) => {
   return (
     <div className={`social-icons ${layout}`}>
       {socialLinks.map(({ href, icon: Icon, alt }, index) => (
