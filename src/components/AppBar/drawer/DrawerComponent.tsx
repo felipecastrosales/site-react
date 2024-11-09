@@ -1,6 +1,5 @@
 import * as React from "react"
 
-import { Button } from "@/components/ui/button"
 import {
   Drawer,
   DrawerContent,
@@ -9,9 +8,9 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer"
+
 import SocialMedias, { SocialMediasIconLayout } from "@/components/SocialMedias/SocialMedias"
 import AppIcons from "@/core/constants/AppIcons"
-// import { SocialMedias, SocialMediasIconLayout } from "@/components/ui/socialMedias"
 
 export function DrawerComponent() {
   const [open, setOpen] = React.useState(false)
@@ -19,10 +18,9 @@ export function DrawerComponent() {
   return (
     <Drawer open={open} onOpenChange={setOpen}>
       <DrawerTrigger asChild>
-        <img 
-          src={AppIcons.menu}
-          alt="Redes Sociais" 
-          style={{ height: '24px', color: 'var(--background-color)' }}
+        <AppIcons.menu
+          style={{ height: '24px', width: '24px' }}
+          aria-label="Redes Sociais" 
         />
       </DrawerTrigger>
       <DrawerContent>

@@ -1,4 +1,7 @@
 .social-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
   @apply flex flex-row space-x-4 items-center transition duration-300 ease-in-out transform hover:scale-110 cursor-pointer ease-in-out;
 }
 
@@ -19,6 +22,9 @@
 
 /* Horizontal Icons */
 .social-icon-horizontal-icons {
+  width: 2rem;
+  height: 2rem;
+  fill: currentColor;
   height: 2rem;
   width: 2rem;
   /* color: var(--background-color);
@@ -28,6 +34,11 @@
 .social-icon-horizontal-icons path {
   color: white;
   fill: white;
+}
+
+.social-icon-horizontal-icons:hover,
+.social-icon-vertical-icons-with-name:hover {
+  color: #646cff; /* Example hover color */
 }
 
 @media (max-width: 768px) {
@@ -42,6 +53,9 @@
 
 /* Vertical Icons with Name */
 .social-icon-vertical-icons-with-name {
+  width: 2rem;
+  height: 2rem;
+  fill: currentColor;
   height: 2rem;
   width: 2rem;
   /* color: var(--background-color);
