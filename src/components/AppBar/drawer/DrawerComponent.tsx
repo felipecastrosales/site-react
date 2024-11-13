@@ -24,9 +24,9 @@ export function DrawerComponent() {
         />
       </DrawerTrigger>
       <DrawerContent>
-        <DrawerHeader className="text-left">
-          <DrawerTitle>Redes Sociais</DrawerTitle>
-          <DrawerDescription>
+        <DrawerHeader className="text-left p-0">
+          <DrawerTitle style={{ padding: '1.5rem 1rem 0.2rem 1rem' }}>Redes Sociais</DrawerTitle>
+          <DrawerDescription style={{ padding: '0 1rem 0rem 1rem' }}>
             Me acompanhe e fique por dentro de tudo que eu faço!
           </DrawerDescription>
           <SocialMedias layout={SocialMediasIconLayout.VerticalWithName} />

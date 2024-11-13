@@ -12,10 +12,16 @@ interface SocialMediasProps {
 
 const SocialMedias = ({ layout }: SocialMediasProps) => {
   return (
-    <div className={`social-icons ${layout}`}>
+    <div className={`social-icons-${layout}`}>
       {socialLinks.map(({ href, icon: Icon, alt }, index) => (
-        <a key={index} href={href} target="_blank" rel="noopener noreferrer">
-          <Icon className={`social-icon-${layout}`} />
+        <a
+          className={`social-icon-item-a-${layout}`}
+          key={index}
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon className={`social-icon-item-${layout}`} />
           {layout === SocialMediasIconLayout.VerticalWithName && <span>{alt}</span>}
         </a>
       ))}

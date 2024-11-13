@@ -1,44 +1,65 @@
-.social-icons {
+/* Horizontal Icons */
+
+/* ///////////////////////// */
+/* Icons */
+.social-icons-horizontal-icons {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 0.5rem;
   @apply flex flex-row space-x-4 items-center transition duration-300 ease-in-out transform hover:scale-110 cursor-pointer ease-in-out;
 }
 
-.social-icons:hover {
+.social-icons-horizontal-icons:hover {
   @apply filter drop-shadow-[0_0_2em_#646cffaa];
 }
 
-.social-icons.react:hover {
+.social-icons-horizontal-icons.react:hover {
   @apply filter drop-shadow-[0_0_2em_#61dafbaa];
 }
 
-/* .social-icon {
-  color: var(--background-color);
-  fill: var(--background-color);
-  color: #fff;
-  fill: #fff;
-} */
-
-/* Horizontal Icons */
-.social-icon-horizontal-icons {
+/* ///////////////////////// */
+/* Item */
+.social-icon-item-horizontal-icons {
   width: 2rem;
   height: 2rem;
   fill: currentColor;
+}
+
+.social-icon-item-horizontal-icons:hover,
+.social-icon-item-vertical-icons-with-name:hover {
+  color: #646cff; /* Example hover color */
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Vertical Icons with Name */
+.social-icons-vertical-icons-with-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.social-icon-item-a-vertical-icons-with-name {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.5rem 1rem;
+}
+
+.social-icon-item-vertical-icons-with-name {
+  fill: currentColor;
   height: 2rem;
   width: 2rem;
-  /* color: var(--background-color);
-  fill: var(--background-color); */
+  margin-right: 0.5rem;
 }
 
-.social-icon-horizontal-icons path {
-  color: white;
-  fill: white;
+.social-icon-item-vertical-icons-with-name path {
+  color: var(--primary-text-color);
+  fill: var(--primary-text-color);
 }
 
-.social-icon-horizontal-icons:hover,
-.social-icon-vertical-icons-with-name:hover {
-  color: #646cff; /* Example hover color */
+.social-icon-item-vertical-icons-with-name span {
+  margin-left: 0.5rem; /* Ensure the span is side by side with the icon */
 }
 
 @media (max-width: 768px) {
@@ -49,68 +70,4 @@
   .social-icons {
     @apply space-x-2;
   }
-}
-
-/* Vertical Icons with Name */
-.social-icon-vertical-icons-with-name {
-  width: 2rem;
-  height: 2rem;
-  fill: currentColor;
-  height: 2rem;
-  width: 2rem;
-  /* color: var(--background-color);
-  fill: var(--background-color); */
-  /* color: black;
-  fill: black; */
-}
-
-.social-icon-vertical-icons-with-name path {
-  /* height: 8rem;
-  width: 8rem; */
-  /* color: var(--background-color);
-  fill: var(--background-color); */
-  color: black;
-  fill: black;
-}
-
-.vertical-icons-with-name {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.vertical-icons-with-name a {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
-.vertical-icons-with-name .social-link {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
-/* .vertical-icons-with-name svg {
-  margin-right: 1rem;
-  width: 50px;
-  height: 50px;
-  color: #000;
-} */
-
-/* .vertical-icons-with-name span {
-  font-size: 12px;
-  text-align: left;
-  margin-top: 0;
-} */
-
-.vertical-icons-with-name:hover {
-  transform: none;
-  filter: none;
-}
-
-.social-icon {
-  fill: purple;
-  stroke: purple;
 }
