@@ -30,6 +30,7 @@ export function DrawerComponent() {
             Me acompanhe e fique por dentro de tudo que eu faço!
           </DrawerDescription>
           <SocialMedias layout={SocialMediasIconLayout.VerticalWithName} />
+          <div style={{ height: '0.5rem' }} />
         </DrawerHeader>
       </DrawerContent>
     </Drawer>
