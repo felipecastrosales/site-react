@@ -38,6 +38,19 @@
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 0.4rem;
+  text-align: left;
+}
+
+.grid-item-description {
+  font-size: 0.7rem;
+  margin-bottom: 0.4rem;
+  text-align: left;
+}
+
+.grid-item-price {
+  font-size: 0.7rem;
+  margin-bottom: 0.4rem;
+  text-align: left;
 }
 
 .grid-item-categories {
@@ -51,41 +64,6 @@
   font-weight: 500;
   padding: 0.2rem 0.4rem;
   border-radius: 0.25rem;
-}
-
-.category-a {
-  background-color: #e0f7fa;
-  color: #006064;
-}
-
-.category-b {
-  background-color: #ffe0b2;
-  color: #e65100;
-}
-
-.category-c {
-  background-color: #dcedc8;
-  color: #33691e;
-}
-
-.category-d {
-  background-color: #f3e5f5;
-  color: #4a148c;
-}
-
-.category-setup {
-  background-color: #6A5ACD;
-  color: #FFFFFF;
-}
-
-.category-livros {
-  background-color: #FF6347;
-  color: #FFFFFF;
-}
-
-.category-performance {
-  background-color: #FFD700;
-  color: #000000;
 }
 
 @media (min-width: 350px) {
@@ -142,7 +120,17 @@
   .grid-item-title {
     font-size: 0.875rem;
   }
-  
+
+  .grid-item-description {
+    font-size: 0.65rem;
+  }
+
+  .grid-item-price {
+    font-size: 0.65rem;
+    margin-bottom: 0.4rem;
+    text-align: left;
+  }
+
   .category {
     font-size: 0.65rem;
     padding: 0.15rem 0.3rem;

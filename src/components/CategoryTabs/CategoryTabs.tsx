@@ -3,6 +3,7 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
 import { GridItems } from '../Content/Grid/GridItems';
 import { GridItem } from '../Content/Grid/Grid';
 import Grid from '../Content/Grid/Grid';
+import { getCategoriesByIds, CATEGORIES } from '../../core/constants/categories';
 import './CategoryTabs.css';
 
 interface CategoryTabsProps {
@@ -15,6 +16,7 @@ const getCategoryColors = (category: string) => {
   const colorMap: { [key: string]: { bg: string; text: string } } = {
     'setup': { bg: '#6A5ACD', text: '#FFFFFF' },
     'livros': { bg: '#FF6347', text: '#FFFFFF' },
+    'suplementos': { bg: '#32CD32', text: '#FFFFFF' },
     'performance': { bg: '#FFD700', text: '#000000' },
     'category-1': { bg: '#e0f7fa', text: '#006064' },
     'category-2': { bg: '#ffe0b2', text: '#e65100' },
@@ -36,7 +38,8 @@ const CategoryTabs: React.FC<CategoryTabsProps> = ({ searchQuery = '' }) => {
   const getAllCategories = (): string[] => {
     const categoriesSet = new Set<string>();
     GridItems.forEach(item => {
-      item.categories.forEach(category => categoriesSet.add(category));
+      const categories = getCategoriesByIds(item.categoryIds);
+      categories.forEach(category => categoriesSet.add(category.name));
     });
     return Array.from(categoriesSet).sort();
   };
@@ -48,19 +51,21 @@ const CategoryTabs: React.FC<CategoryTabsProps> = ({ searchQuery = '' }) => {
 
     // Filter by search query first
     if (searchQuery) {
-      items = items.filter(item =>
-        item.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        item.categories.some(category => 
-          category.toLowerCase().includes(searchQuery.toLowerCase())
-        )
-      );
+      items = items.filter(item => {
+        const itemCategories = getCategoriesByIds(item.categoryIds);
+        return item.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          itemCategories.some(category => 
+            category.name.toLowerCase().includes(searchQuery.toLowerCase())
+          );
+      });
     }
 
     // Then filter by category tab
     if (activeTab !== 'all') {
-      items = items.filter(item => 
-        item.categories.includes(activeTab)
-      );
+      items = items.filter(item => {
+        const itemCategories = getCategoriesByIds(item.categoryIds);
+        return itemCategories.some(category => category.name === activeTab);
+      });
     }
 
     setFilteredItems(items);
