@@ -54,7 +54,7 @@
   box-shadow: none !important;
 }
 
-/* Use same responsive breakpoints as original Grid */
+/* Updated responsive breakpoints to match Grid - up to 6 columns */
 @media (min-width: 350px) {
   .category-filtered-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -67,9 +67,21 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 768px) {
   .category-filtered-grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .category-filtered-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .category-filtered-grid {
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 
