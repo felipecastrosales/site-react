@@ -83,7 +83,7 @@ button:focus-visible {
 }
 
 main {
-  padding-top: 64px; /* Adjust this value based on the actual height of your AppBar */
+  padding-top: 64px;
 }
 
 @media (prefers-color-scheme: light) {

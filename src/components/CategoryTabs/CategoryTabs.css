@@ -3,7 +3,6 @@
 }
 
 .category-filtered-grid {
-  /* Inherit the same grid structure as the original */
   display: grid;
   gap: 1rem;
   @apply py-4;

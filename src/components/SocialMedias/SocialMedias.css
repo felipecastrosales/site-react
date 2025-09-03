@@ -27,7 +27,7 @@
 
 .social-icon-item-horizontal-icons:hover,
 .social-icon-item-vertical-icons-with-name:hover {
-  color: #646cff; /* Example hover color */
+  color: #646cff;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -59,7 +59,7 @@
 }
 
 .social-icon-item-vertical-icons-with-name span {
-  margin-left: 0.5rem; /* Ensure the span is side by side with the icon */
+  margin-left: 0.5rem;
 }
 
 @media (max-width: 768px) {

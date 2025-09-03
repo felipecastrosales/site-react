@@ -9,11 +9,9 @@
 .search-input {
   width: 100%;
   max-width: 500px;
-  /* Remove margin auto to align left */
   display: block;
 }
 
-/* Keep existing styles for transitions and original layout */
 .item {
   opacity: 0;
   transform: translateY(20px);

@@ -1,5 +1,12 @@
 import { GridItem } from "./Grid";
 
+const categories = [
+  'Setup',
+  'Livros',
+  'Suplementos',
+  'Performance',
+];
+
 export const GridItems: GridItem[] = [
   {
     id: 1,
@@ -54,47 +61,47 @@ export const GridItems: GridItem[] = [
     id: 8,
     imageUrl: 'https://m.media-amazon.com/images/I/613pUlI+W3L._AC_SX679_.jpg',
     title: 'Creatina Monohidratada 500g',
-    categories: ['Performance'],
+    categories: ['Suplementos'],
     link: 'https://www.amazon.com.br/Creatina-Monohidratada-500g-Importada-Nutrition/dp/B0BL579H1Z/ref=sr_1_3_sspa?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=26SL2UWOBKWD3&dib=eyJ2IjoiMSJ9.J0soID_wSqiO8DAV0Kj0KXVD5_8Dli6c790ht5LGk4vi39FgXR6aVx_vk-zaFFqFJ4BsA5vtSvGY2j0SlJcpT_g5BIIV6dKwK9XmYEfw6RcntWQCk7KmdSFhG_SSCgRZ1npDMrT10eWx2FUDAndIJSzSt-YR5wLoJkfFr_OX3fGHT_fBZmouduPN7gfiOCs5QrVcvm03dX6l2i7hc5UeTWxsvMz3FUUoJbwk54dvV1MqnNYYNkaJ4j2gyJRM1SE6GaT0qVi99eCar7-kk5nz1YT-uBNGdJw9iBpnLlfToWA.DefstqNTgai2D6eGyoHWSG7JpXH-RytAqRQocG9uAEc&dib_tag=se&keywords=creatina&qid=1730244781&sprefix=creatina+%2Caps%2C243&sr=8-3-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1'
   },
   {
     id: 9,
-    imageUrl: 'https://via.placeholder.com/300',
+    imageUrl: 'https://picsum.photos/200/200',
     title: 'Item 9',
     categories: ['Category 2', 'Category 3'],
     link: '#'
   },
   {
     id: 10,
-    imageUrl: 'https://via.placeholder.com/300',
+    imageUrl: 'https://picsum.photos/200/300',
     title: 'Item 10',
     categories: ['Category 1', 'Category 3'],
     link: '#'
   },
   {
     id: 11,
-    imageUrl: 'https://via.placeholder.com/300',
+    imageUrl: 'https://picsum.photos/200/400',
     title: 'Item 11',
     categories: ['Category 1', 'Category 2', 'Category 3'],
     link: '#'
   },
   {
     id: 12,
-    imageUrl: 'https://via.placeholder.com/300',
+    imageUrl: 'https://picsum.photos/500/200',
     title: 'Item 12',
     categories: ['Category 2'],
     link: '#'
   },
   {
     id: 13,
-    imageUrl: 'https://via.placeholder.com/300',
+    imageUrl: 'https://picsum.photos/400/400',
     title: 'Item 13',
     categories: ['Category 3'],
     link: '#'
   },
   {
     id: 14,
-    imageUrl: 'https://via.placeholder.com/300',
+    imageUrl: 'https://picsum.photos/500/500',
     title: 'Item 14',
     categories: ['Category 1', 'Category 2'],
     link: '#'
